@@ -1,0 +1,238 @@
+.navHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 18px 22px;
+}
+
+.navInner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 20px;
+  line-height: 1;
+  padding: 10px 12px;
+}
+
+/* Desktop nav */
+.navDesktop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Each item wraps pill + dropdown */
+.navItem {
+  position: relative;
+}
+
+/* Top pills */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+
+  transition: transform 160ms ease, background 160ms ease, border 160ms ease;
+}
+
+.pill:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.pillActive {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.35);
+}
+
+/* Dropdown container hidden by default */
+.dropdown {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+
+  /* zone tampon */
+  padding-top: 14px;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 140ms ease;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -30px;
+  right: -30px;
+  height: 14px; /* doit matcher padding-top */
+}
+
+/* Show on hover (pill OR dropdown area) */
+.navItem:hover .dropdown {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dropdownInner {
+  position : relative;
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Dropdown pills (same style but lighter like Canva) */
+.dropdownPill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 11px;
+
+  padding: 10px 16px;
+  border-radius: 999px;
+
+  color: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  transition: transform 140ms ease, background 140ms ease;
+  white-space: nowrap;
+}
+
+.dropdownPill:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.92);
+}
+
+/* Mobile */
+.burger {
+  display: none;
+  margin-left: auto;
+  width: 46px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  cursor: pointer;
+}
+
+.burgerLine {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 4px auto;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+}
+
+.navMobile {
+  display: none;
+}
+
+.navMobileInner {
+  display: grid;
+  gap: 12px;
+  padding: 12px 0 0 0;
+}
+
+.mobileGroup {
+  display: grid;
+  gap: 8px;
+}
+
+.mobileTopRow {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.pillMobile {
+  width: 100%;
+}
+
+.mobileExpand {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.10);
+  color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+}
+
+.mobileSub {
+  display: grid;
+  gap: 10px;
+  padding-left: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 220ms ease;
+}
+
+.mobileSub.open {
+  max-height: 400px;
+}
+
+.dropdownPillMobile {
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .burger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .navMobile {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 220ms ease;
+  }
+
+  .navMobileOpen {
+    max-height: 70vh;
+  }
+}

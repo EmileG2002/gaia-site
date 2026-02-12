@@ -1,0 +1,143 @@
+.aboutPage {
+  background: #cfe3ff;
+  min-height: 100vh;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+.aboutSection {
+  padding: 64px 24px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.aboutTitle {
+  text-align: center;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.18em;
+  margin-bottom: 40px;
+}
+
+.aboutTextBlock {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.aboutTextBlock p {
+  margin: 18px 0;
+}
+
+.aboutSubTitle {
+  text-align: center;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  letter-spacing: 0.12em;
+  font-size: 1rem;
+  margin: 34px 0 18px;
+}
+
+/* Team */
+.teamGrid {
+  display: grid;
+  justify-content: center;
+  gap: 44px 80px;
+  margin-bottom: 26px;
+}
+
+.teamGrid.cols3 {
+  grid-template-columns: repeat(3, 170px);
+}
+
+.teamGrid.cols2 {
+  grid-template-columns: repeat(2, 170px);
+}
+
+.teamCard {
+  text-align: center;
+}
+
+.teamAvatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 999px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.teamName {
+  font-size: 0.95rem;
+}
+
+.teamRole {
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+/* Contact */
+.contactRow {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.contactLabel {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.contactSub {
+  font-size: 0.85rem;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  flex-wrap: wrap;
+}
+
+.contact-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icons img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0.85;
+}
+
+.contact-icons a:hover img {
+  transform: translateY(-4px) scale(1.05);
+  opacity: 1;
+}
+
+.aboutSection:last-child {
+  padding-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  .teamGrid.cols3 {
+    grid-template-columns: repeat(2, 170px);
+  }
+}
+
+@media (max-width: 520px) {
+  .teamGrid.cols3,
+  .teamGrid.cols2 {
+    grid-template-columns: 1fr;
+  }
+}

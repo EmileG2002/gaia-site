@@ -1,0 +1,10 @@
+.home-bottomText {
+  position: absolute;
+  bottom: 42px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  letter-spacing: 0.25em;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
