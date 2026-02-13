@@ -1,6 +1,6 @@
 .home-hero {
   height: 100vh;
-  background-image: url("/images/hero-bg.jpeg"); /* ⬅️ placeholder */
+  background-image: url("/images/background.jpg"); /* ⬅️ placeholder */
   background-size: cover;
   background-position: center;
   position: relative;

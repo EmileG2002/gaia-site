@@ -75,7 +75,7 @@ export default function About() {
         <div className="teamGrid cols3">
           <TeamMemberCard name="Amanda Brière" role="Responsable communication" />
           <TeamMemberCard name="Mathilde Turcotte" role="Responsable communication" />
-          <TeamMemberCard name="Héloïse Mira Schurch" role="Responsable mise en scène" />
+          <TeamMemberCard name="Héloïse Mira Schurch" role="Responsable mise en scène" imgSrc="/images/vincent.jpg" />
         </div>
       </section>
 
@@ -85,7 +85,7 @@ export default function About() {
 
             <div className="contact-icons">
                 <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/people/Udemedmode/61587863631723/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
@@ -101,7 +101,7 @@ export default function About() {
                 </a>
 
                 <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/udemed.mode/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
