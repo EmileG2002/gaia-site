@@ -36,8 +36,10 @@ export default function Partenaires() {
 
           <div className="pbLogoStack">
             {/* Remplace les src par tes vrais fichiers dans public/images */}
+            <img className="pbLogo" src="/images/fasken.png" alt="FASQUEN" />
             <img className="pbLogo" src="/images/rbc.png" alt="RBC" />
             <img className="pbLogo" src="/images/nqx.png" alt="NQX" />
+            <img className="pbLogo" src="/images/td.png" alt="TD" />
           </div>
         </section>
 
@@ -58,6 +60,7 @@ export default function Partenaires() {
           <div className="pbLogoRow">
             <img className="pbLogo small" src="/images/boda.png" alt="Groupe BODA" />
             <img className="pbLogo small" src="/images/aecium.png" alt="Aecium" />
+            <img className="pbLogo small" src="/images/archermd.png" alt="archermd" />
           </div>
         </section>
 
@@ -75,6 +78,7 @@ export default function Partenaires() {
 
           <div className="pbLogoRow">
             <img className="pbLogo small" src="/images/clarins.png" alt="Clarins" />
+            <img className="pbLogo small" src="/images/pare.png" alt="pare" />
           </div>
         </section>
       </section>

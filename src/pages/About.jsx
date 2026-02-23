@@ -48,34 +48,34 @@ export default function About() {
 
         <h3 className="aboutSubTitle">DIRECTRICES</h3>
         <div className="teamGrid cols3">
-          <TeamMemberCard name="Lauren Kamel" role="Directrice Exécutive" />
-          <TeamMemberCard name="Lynne Finéus" role="Directrice Logistique" />
+          <TeamMemberCard name="Lauren Kamel" role="Directrice Exécutive" imgSrc="/images/lauren.jpg"/>
+          <TeamMemberCard name="Lynne Finéus" role="Directrice Logistique" imgSrc="/images/lynn.jpg"/>
           <TeamMemberCard name="Lara Alsabeh" role="Directrice Artistique" />
         </div>
 
         <h3 className="aboutSubTitle">LOGISTIQUES</h3>
         <div className="teamGrid cols2">
-          <TeamMemberCard name="Maggie Vaillancourt" role="Responsable logistique" />
-          <TeamMemberCard name="Lou-An Lè-Berthier" role="Responsable finance" />
+          <TeamMemberCard name="Maggie Vaillancourt" role="Responsable logistique" imgSrc="/images/maggie.jpg"/>
+          <TeamMemberCard name="Lou-An Lè-Berthier" role="Responsable finance" imgSrc="/images/lou.jpg"/>
         </div>
 
         <h3 className="aboutSubTitle">ARTISTIQUES</h3>
         <div className="teamGrid cols3">
-          <TeamMemberCard name="Anouk Villeneuve" role="Responsable boutiques et partenaires" />
-          <TeamMemberCard name="Salomé Boissonneault" role="Responsable boutiques et partenaires" />
-          <TeamMemberCard name="Marilou Salvatorelli" role="Responsable boutiques et partenaires" />
+          <TeamMemberCard name="Anouk Villeneuve" role="Responsable boutiques et partenaires" imgSrc="/images/anouk.jpg"/>
+          <TeamMemberCard name="Salomé Boissonneault" role="Responsable boutiques et partenaires" imgSrc="/images/salome.jpg"/>
+          <TeamMemberCard name="Marilou Salvatorelli" role="Responsable boutiques et partenaires" imgSrc="/images/marilou.jpg"/>
         </div>
 
         <div className="teamGrid cols3">
-          <TeamMemberCard name="Kamilia Lamtaouab" role="Responsable mannequins" />
-          <TeamMemberCard name="Agnès Hage-Chehine" role="Responsable mannequins" />
-          <TeamMemberCard name="Madeleine D'amours-Gravel" role="Responsable mannequins" />
+          <TeamMemberCard name="Kamilia Lamtaouab" role="Responsable mannequins" imgSrc="/images/kamilia.jpg"/>
+          <TeamMemberCard name="Agnès Hage-Chehine" role="Responsable mannequins" imgSrc="/images/agnes.jpg"/>
+          <TeamMemberCard name="Madeleine D'amours-Gravel" role="Responsable mannequins" imgSrc="/images/madelaine.jpg"/>
         </div>
 
         <div className="teamGrid cols3">
-          <TeamMemberCard name="Amanda Brière" role="Responsable communication" />
-          <TeamMemberCard name="Mathilde Turcotte" role="Responsable communication" />
-          <TeamMemberCard name="Héloïse Mira Schurch" role="Responsable mise en scène" imgSrc="/images/vincent.jpg" />
+          <TeamMemberCard name="Amanda Brière" role="Responsable communication" imgSrc="/images/amanda.jpg"/>
+          <TeamMemberCard name="Mathilde Turcotte" role="Responsable communication" imgSrc="/images/mathilde.jpg"/>
+          <TeamMemberCard name="Héloïse Mira Schurch" role="Responsable mise en scène" imgSrc="/images/helo.jpg" />
         </div>
       </section>
 
@@ -93,7 +93,7 @@ export default function About() {
                 </a>
 
                 <a
-                href="https://linkedin.com"
+                href="https://www.tiktok.com/@udemed.mode?is_from_webapp=1&sender_device=pc"
                 target="_blank" 
                 rel="noopener noreferrer"
                 >

@@ -1,0 +1,64 @@
+.don-page {
+  background: #cfe3ff;
+  min-height: 100vh;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.don-section {
+  padding: 110px 24px 60px;
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.don-title {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+  letter-spacing: 0.18em;
+  margin-bottom: 36px;
+}
+
+/* lien */
+.don-link {
+  display: inline-block;
+  margin-top: 16px;
+  font-style: italic;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.2s ease;
+}
+
+.don-link:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.don-link.big {
+  margin-top: 26px;
+  font-size: 1.1rem;
+}
+
+.don-bottom {
+  margin-top: 24px;
+}
+
+.don-center {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.don-page .houseCard {
+  min-height: 450px;
+}
+
+/* centre verticalement le contenu des maisons dans la page Dons */
+.don-page .houseContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centre verticalement */
+  align-items: center;       /* centre horizontalement */
+  height: 100%;
+  padding: 0 28px;           /* on enlève le gros padding top */
+}

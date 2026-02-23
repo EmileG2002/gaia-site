@@ -34,18 +34,18 @@ const nav = [
     label: "DONS",
     to: "/dons",
     children: [
-      { label: "LA MAISON BLEUE", to: "/dons" },
-      { label: "GAÏA 2026", to: "/evenement/gaia-2026" },
+      { label: "LA MAISON BLEUE", to: "/dons#donmaison" },
+      { label: "GAÏA 2026", to: "/dons#dongaia" },
     ],
   },
   {
     label: "L'ÉVÉNEMENT",
     to: "/evenement",
     children: [
-      { label: "DÉFILÉ", to: "/evenement" },
-      { label: "BILLETERIE", to: "/evenement/billetterie" },
-      { label: "PROGRAMME", to: "/evenement/programmation" },
-      { label: "TOMBOLA", to: "/evenement/tombola" },
+      { label: "DÉFILÉ", to: "/evenement#defile" },
+      { label: "BILLETERIE", to: "/evenement#billetterie" },
+      { label: "PROGRAMME", to: "/evenement#programmation" },
+      { label: "TOMBOLA", to: "/evenement#tombola" },
     ],
   },
 ];

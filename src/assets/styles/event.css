@@ -1,0 +1,102 @@
+.evPage {
+  background: #cfe3ff;
+  min-height: 100vh;
+  color: rgba(0, 0, 0, 0.78);
+}
+
+/* sections comme tes autres pages */
+.evSection {
+  padding: 70px 24px;
+  max-width: 1050px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.evTitle {
+  text-align: center;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.18em;
+  margin: 0 0 40px;
+}
+
+/* Défilé */
+.evDefileGrid {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 34px;
+  align-items: center;
+  justify-content: center;
+}
+
+.evAffiche {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  display: block;
+}
+
+.evInfoCard {
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  padding: 22px 22px;
+  text-align: left;
+}
+
+.evInfoRow {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 12px;
+  align-items: start;
+  padding: 10px 0;
+}
+
+.evIcon {
+  font-size: 1.25rem;
+  line-height: 1;
+  opacity: 0.9;
+}
+
+.evAccent {
+  color: #ff2a2a;
+  font-weight: 700;
+}
+
+/* Programmation */
+.evProgCard {
+  max-width: 560px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.35);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 22px;
+  padding: 28px 22px;
+  text-align: center;
+}
+
+.evProgLine {
+  margin: 8px 0;
+  letter-spacing: 0.06em;
+}
+
+.evProgLine.strong {
+  font-weight: 800;
+}
+
+.evProgDivider {
+  height: 2px;
+  background: rgba(0, 0, 0, 0.16);
+  margin: 16px auto;
+  width: 85%;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .evDefileGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .evInfoCard {
+    text-align: left;
+  }
+}
