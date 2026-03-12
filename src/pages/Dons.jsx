@@ -51,7 +51,7 @@ export default function Dons() {
 
               <a
                 className="don-link"
-                href="https://example.com"
+                href="https://www.jedonneenligne.org/lamaisonbleue/GAIA26/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -125,7 +125,7 @@ export default function Dons() {
 
           <a
             className="don-link big"
-            href="https://example.com"
+            href="https://www.zeffy.com/fr-CA/donation-form/gaia-2026-dons-a-la-maison-bleue"
             target="_blank"
             rel="noreferrer"
           >

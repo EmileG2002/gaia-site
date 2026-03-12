@@ -4,7 +4,6 @@
   color: rgba(0, 0, 0, 0.78);
 }
 
-/* sections comme tes autres pages */
 .evSection {
   padding: 70px 24px;
   max-width: 1050px;
@@ -20,11 +19,11 @@
   margin: 0 0 40px;
 }
 
-/* Défilé */
+/* DÉFILÉ */
 .evDefileGrid {
   display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 34px;
+  grid-template-columns: 360px 1fr;
+  gap: 18px;
   align-items: center;
   justify-content: center;
 }
@@ -32,62 +31,125 @@
 .evAffiche {
   width: 100%;
   height: auto;
-  border-radius: 18px;
   display: block;
 }
 
 .evInfoCard {
   background: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 18px;
-  padding: 22px 22px;
+  border-radius: 24px;
+  padding: 22px 26px;
   text-align: left;
 }
 
 .evInfoRow {
   display: grid;
-  grid-template-columns: 34px 1fr;
-  gap: 12px;
+  grid-template-columns: 40px 1fr;
+  gap: 14px;
   align-items: start;
   padding: 10px 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
 }
 
-.evIcon {
-  font-size: 1.25rem;
-  line-height: 1;
-  opacity: 0.9;
+.evIconImg {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: brightness(0);
 }
 
-.evAccent {
-  color: #ff2a2a;
-  font-weight: 700;
+.evLink {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-/* Programmation */
+.evLink:hover {
+  opacity: 0.7;
+}
+
+/* PROGRAMMATION */
 .evProgCard {
   max-width: 560px;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.35);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 22px;
-  padding: 28px 22px;
+  border-radius: 26px;
+  padding: 28px 26px;
   text-align: center;
 }
 
 .evProgLine {
   margin: 8px 0;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
+  font-size: 1rem;
 }
 
 .evProgLine.strong {
   font-weight: 800;
 }
 
+.evProgLine.italic {
+  font-style: italic;
+}
+
 .evProgDivider {
   height: 2px;
-  background: rgba(0, 0, 0, 0.16);
+  background: rgba(120, 138, 167, 0.35);
   margin: 16px auto;
-  width: 85%;
+  width: 90%;
+}
+
+.evProgSmallDivider {
+  height: 2px;
+  background: rgba(120, 138, 167, 0.3);
+  margin: 12px auto;
+  width: 52%;
+}
+
+/* BILLETTERIE */
+.evSimpleCenterBlock {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.evComingSoon {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+.evComingDate {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+}
+
+/* TOMBOLA */
+.evTombolaSub {
+  font-weight: 800;
+  margin-top: -14px;
+  margin-bottom: 28px;
+  letter-spacing: 0.04em;
+}
+
+.evTombolaRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.evTombolaLogo {
+  max-width: 240px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
 }
 
 /* responsive */
@@ -96,7 +158,21 @@
     grid-template-columns: 1fr;
   }
 
+  .evAffiche {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
   .evInfoCard {
     text-align: left;
+  }
+
+  .evTombolaRow {
+    gap: 28px;
+  }
+
+  .evTombolaLogo {
+    max-width: 180px;
+    max-height: 90px;
   }
 }

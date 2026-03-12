@@ -18,72 +18,127 @@ export default function Partenaires() {
 
   return (
     <div className="pbPage">
+    <section className="pbSection">
       {/* OR */}
-      <section className="pbSection">
-        <section id="or" className="pbSmallSection">
-          <div className="pbKicker">PARTENAIRES GAÏA 2026</div>
-          <h2 className="pbTitle">PARTENAIRES OR</h2>
+      <section id="or" className="pbSmallSection">
+        <h2 className="pbTitle">PARTENAIRES OR</h2>
 
-          <p className="pbText">
-            Les partenaires Or occupent une place centrale dans la réalisation de GAÏA 2026.
-            Leur engagement permet de soutenir la direction artistique, la production de l’événement
-            et l’expérience globale offerte aux invité·e·s.
-          </p>
+        <p className="pbText">
+          Les partenaires Or occupent une place centrale dans la réalisation de GAÏA 2026.
+          Leur engagement permet de soutenir la direction artistique, la production de l’événement
+          et l’expérience globale offerte aux invité·e·s.
+        </p>
 
-          <p className="pbText strong">
-            Nous remercions chaleureusement nos partenaires Or pour leur contribution déterminante.
-          </p>
+        <p className="pbText strong">
+          Nous remercions chaleureusement nos partenaires Or pour leur contribution déterminante.
+        </p>
 
-          <div className="pbLogoStack">
-            {/* Remplace les src par tes vrais fichiers dans public/images */}
-            <img className="pbLogo" src="/images/fasken.png" alt="FASQUEN" />
-            <img className="pbLogo" src="/images/rbc.png" alt="RBC" />
-            <img className="pbLogo" src="/images/nqx.png" alt="NQX" />
-            <img className="pbLogo" src="/images/td.png" alt="TD" />
-          </div>
-        </section>
+        <div className="pbSpecialPartnerRow">
+          <a
+            className="pbSpecialPartnerCard"
+            href="https://www.fasken.com/fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="pbSpecialPartnerTitle">PARTENAIRE CORPORATIF ENGAGÉ</div>
+            <img className="pbLogo pbLogoSpecial" src="/images/fasken.png" alt="Fasken" />
+          </a>
 
-        {/* ARGENT */}
-        <section id="argent" className="pbSmallSection">
-          <div className="pbKicker">PARTENAIRES GAÏA 2026</div>
-          <h2 className="pbTitle">PARTENAIRES ARGENT</h2>
+          <a
+            className="pbSpecialPartnerCard"
+            href="https://beautestar.com/?srsltid=AfmBOoouZAVXRd9r-08vapulfFZ3OHPrc6OvPBVJlEmBmCQKJYyVY8WI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="pbSpecialPartnerTitle">PARTENAIRE COIFFURE OFFICIEL</div>
+            <img className="pbLogo pbLogoSpecial" src="/images/beautestar.png" alt="Beauté Star" />
+          </a>
+        </div>
 
-          <p className="pbText">
-            Les partenaires Argent soutiennent GAÏA 2026 par leur engagement et leur collaboration,
-            contribuant à enrichir l’expérience proposée tout au long de l’événement.
-          </p>
+        <div className="pbLogoGrid pbLogoGridOr">
+          <a
+            className="pbLogoCard pbLogoCardOr"
+            href="https://www.rbccm.com/fr"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="pbLogo pbLogoOr" src="/images/rbc.png" alt="RBC" />
+          </a>
 
-          <p className="pbText strong">
-            Nous remercions nos partenaires Argent pour leur soutien précieux.
-          </p>
+          <a
+            className="pbLogoCard pbLogoCardOr"
+            href="https://www.nqx.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="pbLogo pbLogoOr" src="/images/nqx.png" alt="NQX" />
+          </a>
 
-          <div className="pbLogoRow">
-            <img className="pbLogo small" src="/images/boda.png" alt="Groupe BODA" />
-            <img className="pbLogo small" src="/images/aecium.png" alt="Aecium" />
-            <img className="pbLogo small" src="/images/archermd.png" alt="archermd" />
-          </div>
-        </section>
+          <a
+            className="pbLogoCard pbLogoCardOr"
+            href="https://www.td.com/ca/fr/services-bancaires-personnels?cm_sp=:GOOGLE:ROC+-+Brand+-+FR+-+Core+ACQ+-+Google+-+26301++(26_S_BR_BAC_AO_ACQ_FR_NAT):DIF:Core+Brand+FR+-+Broad&gclsrc=aw.ds&gad_source=1&gad_campaignid=17535966708&gbraid=0AAAAAD1rvrQdEZC0fCnUtu7XnOHP_tdzh&gclid=Cj0KCQiA5I_NBhDVARIsAOrqIsYk7iCEP7pieNtsCWbDVbV_qXFAxvUcfOHcCINiYNUnCV1w4u3WpikaAnkTEALw_wcB"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="pbLogo pbLogoOr" src="/images/td.png" alt="TD" />
+          </a>
+        </div>
 
-        {/* BRONZE */}
-        <section id="bronze" className="pbSmallSection">
-          <div className="pbKicker">PARTENAIRES GAÏA 2026</div>
-          <h2 className="pbTitle">PARTENAIRES BRONZE</h2>
-
-          <p className="pbText">
-            Les partenaires Bronze participent à la réalisation de GAÏA 2026 et témoignent de leur appui
-            à la créativité étudiante et à l’engagement communautaire.
-          </p>
-
-          <p className="pbText strong">Nous les remercions pour leur implication.</p>
-
-          <div className="pbLogoRow">
-            <img className="pbLogo small" src="/images/clarins.png" alt="Clarins" />
-            <img className="pbLogo small" src="/images/pare.png" alt="pare" />
-          </div>
-        </section>
       </section>
 
-      {/* DEVENIR PARTENAIRE */}
+      {/* ARGENT */}
+      <section id="argent" className="pbSmallSection">
+        <h2 className="pbTitle">PARTENAIRES ARGENT</h2>
+
+        <p className="pbText">
+          Les partenaires Argent soutiennent GAÏA 2026 par leur engagement et leur collaboration,
+          contribuant à enrichir l’expérience proposée tout au long de l’événement.
+        </p>
+
+        <p className="pbText strong">
+          Nous remercions nos partenaires Argent pour leur soutien précieux.
+        </p>
+        <div className="pbLogoGrid pbLogoGridArgent">
+          <div className="pbLogoCard pbLogoCardArgent">
+            <img className="pbLogo pbLogoArgent" src="/images/boda.png" alt="Groupe BODA" />
+          </div>
+
+          <div className="pbLogoCard pbLogoCardArgent">
+            <img className="pbLogo pbLogoArgent" src="/images/aecium.png" alt="Aecium" />
+          </div>
+
+          <div className="pbLogoCard pbLogoCardArgent">
+            <img className="pbLogo pbLogoArgent" src="/images/archermd.png" alt="archermd" />
+          </div>
+         <div className="pbLogoCard pbLogoCardArgent">
+            <img className="pbLogo pbLogoArgent" src="/images/quesnel.png" alt="quesnel" />
+          </div>
+        </div>
+      </section>
+
+      {/* BRONZE */}
+      <section id="bronze" className="pbSmallSection">
+        <h2 className="pbTitle">PARTENAIRES BRONZE</h2>
+
+        <p className="pbText">
+          Les partenaires Bronze participent à la réalisation de GAÏA 2026 et témoignent de leur appui
+          à la créativité étudiante et à l’engagement communautaire.
+        </p>
+
+        <p className="pbText strong">Nous les remercions pour leur implication.</p>
+
+        <div className="pbLogoGrid pbLogoGridBronze">
+          <div className="pbLogoCard pbLogoCardBronze">
+            <img className="pbLogo pbLogoBronze" src="/images/clarins.png" alt="Clarins" />
+          </div>
+
+          <div className="pbLogoCard pbLogoCardBronze">
+            <img className="pbLogo pbLogoBronze" src="/images/pare.png" alt="pare" />
+          </div>
+        </div>
+      </section>
+    </section>
+
       <section id="devenir-partenaire" className="pbSection">
         <div className="pbKicker">PARTENAIRES & BOUTIQUES</div>
         <h2 className="pbTitle">DEVENEZ PARTENAIRE</h2>
@@ -111,7 +166,7 @@ export default function Partenaires() {
         </div>
       </section>
 
-      {/* BOUTIQUES */}
+
       <section id="boutiques" className="pbSection">
         <div className="pbKicker">PARTENAIRES & BOUTIQUES</div>
         <h2 className="pbTitle">BOUTIQUES</h2>
@@ -130,7 +185,6 @@ export default function Partenaires() {
 
       </section>
 
-      {/* DEVENIR BOUTIQUE */}
       <section id="devenir-boutique" className="pbSection">
         <div className="pbKicker">PARTENAIRES & BOUTIQUES</div>
         <h2 className="pbTitle">DEVENEZ BOUTIQUE PARTENAIRE</h2>

@@ -100,29 +100,36 @@
 .contact-icons {
   display: flex;
   justify-content: center;
-  gap: 48px;
+  gap: 90px;
   margin-top: 40px;
-  margin-bottom: 120px;
   flex-wrap: wrap;
 }
 
-.contact-icons a {
-  display: inline-flex;
+.contact-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  gap: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
-.contact-icons img {
-  width: 96px;
-  height: 96px;
+.contact-item img {
+  width: 80px;
+  height: 80px;
   object-fit: contain;
-  transition: transform 0.25s ease, opacity 0.25s ease;
-  opacity: 0.85;
+  transition: transform 0.2s ease;
 }
 
-.contact-icons a:hover img {
-  transform: translateY(-4px) scale(1.05);
-  opacity: 1;
+.contact-item img:hover {
+  transform: scale(1.08);
+}
+
+.contact-handle {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
 }
 
 .aboutSection:last-child {

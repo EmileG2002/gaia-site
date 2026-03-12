@@ -43,8 +43,8 @@ const nav = [
     to: "/evenement",
     children: [
       { label: "DÉFILÉ", to: "/evenement#defile" },
-      { label: "BILLETERIE", to: "/evenement#billetterie" },
       { label: "PROGRAMME", to: "/evenement#programmation" },
+      { label: "BILLETERIE", to: "/evenement#billetterie" },
       { label: "TOMBOLA", to: "/evenement#tombola" },
     ],
   },
