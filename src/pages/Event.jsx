@@ -115,8 +115,14 @@ export default function Event() {
         <h2 className="evTitle">BILLETTERIE</h2>
 
         <div className="evSimpleCenterBlock">
-          <div className="evComingSoon">À VENIR</div>
-          <div className="evComingDate">23.03.2026</div>
+        <a
+        className="evComingSoon"
+        href="https://www.zeffy.com/fr-CA/ticketing/gaia--2026"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
+        Consulter le lien Zeffy
+        </a>
         </div>
       </section>
 

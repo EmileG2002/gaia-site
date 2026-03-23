@@ -199,6 +199,20 @@ export default function Partenaires() {
     url=""
   />
 
+      <BoutiqueCard
+    name="Aldo"
+    description="ALDO réinvente les essentiels du style avec des chaussures et accessoires tendance, conçus pour suivre ton rythme et affirmer ta personnalité."
+    imgSrc="/images/aldo.jpg"
+    url="https://www.aldoshoes.com/en-ca"
+  />
+
+    <BoutiqueCard
+    name="Lolë"
+    description="Lolë est une marque canadienne de vêtements actifs et de plein air qui allie style, performance et bien-être, en proposant des pièces durables et polyvalentes conçues pour accompagner un mode de vie actif au quotidien."
+    imgSrc="/images/lole.png"
+    url="https://lolelife.com/fr-ca"
+  />
+
   <BoutiqueCard
     name="Lise René de Cotret"
     description="Lise René de Cotret est une marque émergeante de vêtements haut de gamme & haute couture avec de grandes ambitions. Créée en honneur d'un être cher, la marque rend hommage au savoir-faire ancestral et l'attention au détail. La designer s'inspire des grands créateurs européens pour donner vie à des silhouettes élégantes et complexes."
