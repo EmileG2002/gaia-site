@@ -196,7 +196,7 @@ export default function Partenaires() {
   />
 
   <BoutiqueCard
-    name="Furrias"
+    name="Zolarke - Collection FURRIAS"
     description="High-end and unisex streetwear designs. A brand willing to push boundaries and provoke to reshape perspectives while keeping their core values such as sustainability, inclusivity and equality. Never forgetting a touch of sass."
     imgSrc="/images/furrias.jpg"
     url=""
