@@ -91,7 +91,7 @@ export default function Dons() {
 
               <a
                 className="don-link"
-                href="https://example.com"
+                href="/images/affiche-don.pdf"
                 target="_blank"
                 rel="noreferrer"
               >
