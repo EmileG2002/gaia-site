@@ -135,6 +135,9 @@ export default function Partenaires() {
           <div className="pbLogoCard pbLogoCardBronze">
             <img className="pbLogo pbLogoBronze" src="/images/pare.png" alt="pare" />
           </div>
+          <div className="pbLogoCard pbLogoCardBronze">
+            <img className="pbLogo pbLogoBronze" src="/images/parasuco.jpg" alt="pare" />
+          </div>
         </div>
       </section>
     </section>
